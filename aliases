@@ -35,7 +35,7 @@ alias left="df -h"
 # System helpers
 alias ps="ps -ef | grep \$1"
 alias cls="clear"
-alias please="sudo"
+alias please="sudo" # haha!
 
 # git
 alias develop_branch="git co develop"
@@ -47,8 +47,8 @@ alias bi="b install --path vendor"
 alias bu="b update"
 alias be="b exec"
 alias binit="bi && b package && echo 'vendor/ruby' >> .gitignore"
-alias rst='touch tmp/restart.txt'
 alias ld="tail -f log/development.log"
 alias lt="tail -f log/test.log"
 alias lc="tail -f log/cucumber.log"
 alias lr="rm log/*.log"
+alias rst='touch tmp/restart.txt'

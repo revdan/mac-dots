@@ -27,7 +27,7 @@ case $- in *i* )
   # Load config
   _source_if_exists "${HOME}/.config" ;
 
-  # This loads RVM into a shell session
+  # Load RVM into shell session...
   _source_if_exists "${HOME}/.rvm/scripts/rvm" ;
 
   # User-specific aliases and paths

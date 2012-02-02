@@ -1,4 +1,4 @@
 # .path
 # vim:syntax=sh
 
-PATH=${PATH}:${HOME}/bin;
+PATH=/usr/local/bin:$PATH;
