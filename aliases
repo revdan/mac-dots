@@ -1,0 +1,54 @@
+# .aliases
+# vim:syntax=sh
+
+# Reload bash aliases
+alias reload='exec bash -l'
+
+# cd
+alias ..='cd ..'
+alias ...='cd ../..'
+alias -- -="cd -"
+
+# ls
+alias l="ls -lAh --color=auto"
+alias la='ls -A --color=auto'
+alias ll="ls -l --color=auto"
+alias llt="ls -lrt --color=auto"
+alias ls="ls -F --color=auto"
+
+# IP addresses
+alias ip="dig +short myip.opendns.com @resolver1.opendns.com"
+alias localip="ipconfig getifaddr en1"
+alias ips="ifconfig -a | perl -nle'/(\d+\.\d+\.\d+\.\d+)/ && print $1'"
+
+# ssh
+alias ssh_ninja="ssh ed@ninja -p30000"
+
+# Disk space and memory
+alias free="free -m"
+alias left="df -h"
+
+# System helpers
+alias ps="ps -ef | grep \$1"
+alias cls="clear"
+alias please="sudo"
+
+#
+# Development-specific aliases
+#
+
+# git
+alias develop_branch="git co develop"
+alias master_branch="git co master"
+
+# rails
+alias b="bundle"
+alias bi="b install --path vendor"
+alias bu="b update"
+alias be="b exec"
+alias binit="bi && b package && echo 'vendor/ruby' >> .gitignore"
+alias rst='touch tmp/restart.txt'
+alias ld="tail -f log/development.log"
+alias lt="tail -f log/test.log"
+alias lc="tail -f log/cucumber.log"
+alias lr="rm log/*.log"
