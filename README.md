@@ -1,5 +1,5 @@
-MacDots: Dotfiles for you Mac
-=============================
+MacDots: Dotfiles for your Mac
+==============================
 
 Dotfiles for Z-Shell on a Mac. Simples.
 
