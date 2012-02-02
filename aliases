@@ -2,19 +2,23 @@
 # vim:syntax=sh
 
 # Reload bash aliases
-alias reload='exec bash -l'
+alias reload='exec zsh -l'
 
 # cd
 alias ..='cd ..'
 alias ...='cd ../..'
 alias -- -="cd -"
 
+# Z-Shell
+alias zshconfig="subl ~/.mac-dots"
+alias ohmyzsh="subl ~/.oh-my-zsh"
+
 # ls
-alias l="ls -lAh --color=auto"
-alias la='ls -A --color=auto'
-alias ll="ls -l --color=auto"
-alias llt="ls -lrt --color=auto"
-alias ls="ls -F --color=auto"
+alias l="ls -lAh"
+alias la='ls -a'
+alias ll="ls -l"
+alias llt="ls -lrt"
+alias ls="ls -F"
 
 # IP addresses
 alias ip="dig +short myip.opendns.com @resolver1.opendns.com"
@@ -32,10 +36,6 @@ alias left="df -h"
 alias ps="ps -ef | grep \$1"
 alias cls="clear"
 alias please="sudo"
-
-#
-# Development-specific aliases
-#
 
 # git
 alias develop_branch="git co develop"
