@@ -8,4 +8,4 @@
 echo ; zsh --version ;
 
 # Print .mac-dots version
-[ -f "${HOME}/.mac-dots/VERSION" ] && echo "This Z-Shell has been enhanced by .mac-dots version $(cat $HOME/.mac-dots/VERSION)" && echo
+[ -f "${HOME}/.mac-dots/VERSION" ] && echo "Z-Shell enhanced by .mac-dots version $(cat $HOME/.mac-dots/VERSION)" && echo
