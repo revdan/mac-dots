@@ -10,7 +10,7 @@ alias ...='cd ../..'
 alias -- -="cd -"
 
 # Z-Shell
-alias zshconfig="subl ~/.mac-dots"
+alias macdots="subl ~/.mac-dots"
 alias ohmyzsh="subl ~/.oh-my-zsh"
 
 # ls
