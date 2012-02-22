@@ -41,6 +41,7 @@ alias please="sudo" # haha!
 # git
 alias develop_branch="git co develop"
 alias master_branch="git co master"
+alias stable_branch="git co stable"
 
 # rails
 alias b="bundle"
