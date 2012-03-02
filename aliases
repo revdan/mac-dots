@@ -10,9 +10,10 @@ alias ...='cd ../..'
 alias -- -="cd -"
 
 # Quick config updates
+alias hosts="subl /etc/hosts"
 alias macdots="subl ~/.mac-dots"
-alias ohmyzsh="subl ~/.oh-my-zsh"
 alias nginxconf="subl /usr/local/etc/nginx"
+alias ohmyzsh="subl ~/.oh-my-zsh"
 
 # ls
 alias l="ls -lAh"
