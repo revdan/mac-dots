@@ -9,9 +9,10 @@ alias ..='cd ..'
 alias ...='cd ../..'
 alias -- -="cd -"
 
-# Z-Shell
+# Quick config updates
 alias macdots="subl ~/.mac-dots"
 alias ohmyzsh="subl ~/.oh-my-zsh"
+alias nginxconf="subl /usr/local/etc/nginx"
 
 # ls
 alias l="ls -lAh"
