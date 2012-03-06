@@ -8,7 +8,7 @@
   ci = commit
   co = checkout
   st = status -sb
-  hist = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --date=relative
+  hist = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)%an%Creset' --abbrev-commit --date=relative
   type = cat-file -t
   dump = cat-file -p
   a = add .
@@ -18,3 +18,9 @@
   editor = vi
 [format]
   pretty = %C(yellow)%h%Creset %s %C(red)(%an, %cr)%Creset
+[diff]
+  mnemonicprefix = true
+[branch]
+  autosetupmerge = true
+[remote "origin"]
+  push = HEAD
