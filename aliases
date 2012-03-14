@@ -57,3 +57,6 @@ alias lt="tail -f log/test.log"
 alias lc="tail -f log/cucumber.log"
 alias lr="rm log/*.log"
 alias rst='touch tmp/restart.txt'
+
+# RubyMine
+alias remote-debug="rdebug-ide --port 1234 -- \$1"
