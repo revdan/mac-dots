@@ -5,7 +5,7 @@
 [ -f "${HOME}/.zshrc" ] && source "${HOME}/.zshrc" ;
 
 # Print a shell banner for login shells
-echo ; zsh --version ;
+echo ; echo "Kickin' ass with $(zsh --version)" ;
 
 # Print .mac-dots version
 [ -f "${HOME}/.mac-dots/VERSION" ] && echo "Z-Shell enhanced by .mac-dots version $(cat $HOME/.mac-dots/VERSION)" && echo
