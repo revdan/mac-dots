@@ -30,9 +30,10 @@ case $- in *i* )
   # Load RVM into shell session...
   _source_if_exists "${HOME}/.rvm/scripts/rvm" ;
 
-  # User-specific aliases and paths
+  # User-specific aliases, paths & utitlies
   _source_if_exists "${HOME}/.aliases" ;
   _source_if_exists "${HOME}/.path" ;
+  _source_if_exists "${HOME}/.functions" ;
 
   # Load OMZ
   source $ZSH/oh-my-zsh.sh

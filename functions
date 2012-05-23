@@ -1,0 +1,11 @@
+# .functions
+# vim:syntax=sh
+
+#
+# Utility functions
+#
+
+# Log into a vzaar server
+function vzaar_ssh {
+  ssh -i ~/.ssh/vzaar.pem vzaar@$1 ;
+}
