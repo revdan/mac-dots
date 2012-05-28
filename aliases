@@ -57,6 +57,8 @@ alias ld="tail -f log/development.log"
 alias lt="tail -f log/test.log"
 alias lc="tail -f log/cucumber.log"
 alias lr="rm log/*.log"
+alias migrate_dev='rake db:migrate'
+alias migrate_test='rake db:migrate RAILS_ENV=test'
 alias rst='touch tmp/restart.txt'
 
 # RubyMine
