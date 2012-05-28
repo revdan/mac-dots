@@ -6,6 +6,6 @@
 #
 
 # Log into a vzaar server
-function vzaar_ssh {
+function vssh_login {
   ssh -i ~/.ssh/vzaar.pem vzaar@$1 ;
 }
