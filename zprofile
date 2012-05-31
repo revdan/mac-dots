@@ -1,9 +1,6 @@
 # .zprofile
 # vim:syntax=sh
 
-# Get the good stuff...
-[ -f "${HOME}/.zshrc" ] && source "${HOME}/.zshrc" ;
-
 # Print a shell banner for login shells
 echo ; echo "Kickin' ass with $(zsh --version)" ;
 
