@@ -2,7 +2,7 @@
 # vim:syntax=sh
 
 # Reload bash aliases
-alias reload='exec zsh -l'
+alias reload='exec zsh -l && source ~/.zshrc'
 
 # cd
 alias ..='cd ..'

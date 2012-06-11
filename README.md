@@ -47,6 +47,14 @@ As their respective names indicate, these files are executed **before** and **af
 
 These two files are **not** under git control, so are truly personal.
 
+Tip: 
+
+To make updates easier, put the following environment variables into your
+.before-mac-dots file so that you don't have to type them out during an update:
+
+export GIT_NAME="<your name>"
+export GIT_EMAIL="<your email>"
+
 Contributing to mac-dots
 ------------------------
 If you want to contribute:

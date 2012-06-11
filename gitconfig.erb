@@ -1,21 +1,28 @@
 [user]
+  <% if ENV['GIT_NAME'] and ENV['GIT_EMAIL'] %>
+  name = <%= ENV['GIT_NAME'] %>
+  email = <%= ENV['GIT_EMAIL'] %>
+  <% else %>
   name = <%= print("Your Name: "); STDOUT.flush; STDIN.gets.chomp %>
   email = <%= print("Your Email: "); STDOUT.flush; STDIN.gets.chomp %>
+  <% end %>
 [color]
      ui = auto
 [alias]
+  a = add .
+  amend = commit --amend
   br = branch
   ci = commit
   co = checkout
-  st = status -sb
-  sh = stash
-  hist = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)%an%Creset' --abbrev-commit --date=relative
-  type = cat-file -t
-  dump = cat-file -p
-  a = add .
   proon = remote prune origin
   proon-dry = remote prune origin --dry-run
-  pu = !"git fetch origin -v; git fetch upstream -v; git merge upstream/master"
+  sh = stash
+  st = status -sb
+
+  l =  "!source ~/.githelpers && pretty_git_log"
+  la = !git l --all
+  r = !git l -20
+  ra = !git r --all
 [core]
   excludesfile = ~/.gitignore
   autocrlf = input
