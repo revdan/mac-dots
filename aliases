@@ -37,7 +37,7 @@ alias left="df -h"
 
 # System helpers
 alias hgrep="history | grep \$1"
-alias ps="ps -ef | grep \$1"
+alias psef="ps -ef | grep \$1"
 alias cls="clear"
 alias please="sudo" # haha!
 
