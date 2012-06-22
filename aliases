@@ -41,11 +41,14 @@ alias psef="ps -ef | grep \$1"
 alias cls="clear"
 alias please="sudo" # haha!
 
-# git
+# git branches
 alias develop_branch="git co develop"
 alias master_branch="git co master"
 alias stable_branch="git co stable"
-alias gx="gitx"
+
+# git helpers
+alias rebase_master="git pull --rebase origin master"
+alias rebase_stable="git pull --rebase origin stable"
 
 # rails
 alias b="bundle"
