@@ -25,7 +25,6 @@ alias ls="ls -F"
 # IP addresses
 alias ip="dig +short myip.opendns.com @resolver1.opendns.com"
 alias localip="ipconfig getifaddr en1"
-alias ips="ifconfig -a | perl -nle'/(\d+\.\d+\.\d+\.\d+)/ && print $1'"
 
 # ssh
 alias ssh_sam="ssh deployer@sam"
@@ -47,6 +46,7 @@ alias master_branch="git co master"
 alias stable_branch="git co stable"
 
 # git helpers
+alias gx="gitx"
 alias rebase_master="git pull --rebase origin master"
 alias rebase_stable="git pull --rebase origin stable"
 

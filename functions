@@ -9,3 +9,12 @@
 function vssh_login {
   ssh -i ~/.ssh/vzaar.pem vzaar@$1 ;
 }
+
+#
+# Git functions
+#
+
+# Rebase
+function rebase_with {
+  git pull --rebase origin $1 ;
+}

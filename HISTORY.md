@@ -1,6 +1,11 @@
 History
 ===
 
+0.3.0
+---
+added auto update functionality (shamelessly borrowed from oh-my-zsh)
+added git rebase function
+
 0.2.2
 ---
 added HISTORY.md
