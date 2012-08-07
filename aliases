@@ -28,7 +28,7 @@ alias localip="ipconfig getifaddr en1"
 
 # ssh
 alias ssh_sam="ssh deployer@sam"
-alias ssh_zyxtel="ssh admin@zyxtel -p22"
+alias ssh_zyxtel="ssh root@zyxtel -p22"
 
 # Disk space and memory
 alias free="free -m"

@@ -1,5 +1,8 @@
 History
 ===
+0.3.1
+---
+updated ssh alias
 
 0.3.0
 ---
