@@ -5,6 +5,11 @@
 # Utility functions #
 #####################
 
+# Upgrade mac-dots
+function upgrade_mac_dots {
+  /usr/bin/env MACDOTS_HOME=$MACDOTS_HOME zsh $MACDOTS_HOME/tools/upgrade.sh
+}
+
 # Log into a vzaar server
 function vssh_login {
   ssh -i ~/.ssh/vzaar.pem vzaar@$1 ;

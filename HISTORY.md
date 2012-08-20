@@ -1,5 +1,9 @@
 History
 ===
+0.3.3
+---
+added function for manual mac-dots upgrade
+
 0.3.2
 ---
 added helper function to deploy current git branch to staging environment
