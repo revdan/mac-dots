@@ -1,20 +1,25 @@
 # .functions
 # vim:syntax=sh
 
-#
-# Utility functions
-#
+#####################
+# Utility functions #
+#####################
 
 # Log into a vzaar server
 function vssh_login {
   ssh -i ~/.ssh/vzaar.pem vzaar@$1 ;
 }
 
-#
-# Git functions
-#
+#################
+# Git functions #
+#################
 
 # Rebase
 function rebase_with {
   git pull --rebase origin $1 ;
+}
+
+# Deploy to staging from current branch
+function deploy_to_staging {
+  bundle exec cap staging deploy BRANCH=`current_branch` ;
 }
