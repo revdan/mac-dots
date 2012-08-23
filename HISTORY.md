@@ -1,5 +1,9 @@
 History
 ===
+0.3.4
+---
+add diffmerge as git difftool
+
 0.3.3
 ---
 added function for manual mac-dots upgrade
