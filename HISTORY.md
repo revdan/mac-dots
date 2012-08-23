@@ -1,5 +1,10 @@
 History
 ===
+0.3.5
+---
+don't prompt on git difftool
+git alias added for difftool
+
 0.3.4
 ---
 add diffmerge as git difftool

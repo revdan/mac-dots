@@ -15,6 +15,7 @@
   ci = commit
   co = checkout
   df = diff
+  dft = difftool
   proon = remote prune origin
   proon-dry = remote prune origin --dry-run
   sh = stash
@@ -39,5 +40,7 @@
 [diff]
   mnemonicprefix = true
   tool = diffmerge
+[difftool]
+  prompt = false
 [difftool "diffmerge"]
   cmd = diffmerge $LOCAL $REMOTE
