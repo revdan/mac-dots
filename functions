@@ -28,3 +28,29 @@ function rebase_with {
 function deploy_to_staging {
   bundle exec cap staging deploy BRANCH=`current_branch` ;
 }
+
+# Push current branch to remote
+function push_current_branch_to_remote {
+  echo "git push -u origin `current_branch`"
+}
+
+# Delete current branch on origin
+function delete_current_branch_from_remote {
+  echo "Delete remote '`current_branch`' branch? (Y to confirm) \c"
+  read line
+  if [ "$line" = Y ]
+  then
+    echo "git push origin :`current_branch`"
+  fi
+}
+
+# Re-create current branch on remote
+function recreate_current_branch_on_remote {
+  echo "Re-create remote '`current_branch`' branch? (Y to confirm) \c"
+  read line
+  if [ "$line" = Y ]
+  then
+    echo "git push origin :`current_branch`"
+    push_current_branch_to_remote
+  fi
+}

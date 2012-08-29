@@ -1,5 +1,9 @@
 History
 ===
+0.3.6
+---
+added git branch helper functions to manage current branch on remote
+
 0.3.5
 ---
 don't prompt on git difftool
