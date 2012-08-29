@@ -31,7 +31,7 @@ function deploy_to_staging {
 
 # Push current branch to remote
 function push_current_branch_to_remote {
-  echo "git push -u origin `current_branch`"
+  git push -u origin `current_branch`
 }
 
 # Delete current branch on origin
@@ -40,7 +40,7 @@ function delete_current_branch_from_remote {
   read line
   if [ "$line" = Y ]
   then
-    echo "git push origin :`current_branch`"
+    git push origin :`current_branch`
   fi
 }
 
@@ -50,7 +50,7 @@ function recreate_current_branch_on_remote {
   read line
   if [ "$line" = Y ]
   then
-    echo "git push origin :`current_branch`"
+    git push origin :`current_branch`
     push_current_branch_to_remote
   fi
 }

@@ -1,5 +1,9 @@
 History
 ===
+0.3.7
+---
+fixed commented-out commands, DOH!
+
 0.3.6
 ---
 added git branch helper functions to manage current branch on remote
