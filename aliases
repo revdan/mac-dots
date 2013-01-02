@@ -8,6 +8,7 @@ alias reload='exec zsh -l'
 alias ..='cd ..'
 alias ...='cd ../..'
 alias -- -="cd -"
+alias st2='cd ~/Library/Application\ Support/Sublime\ Text\ 2/Packages/User'
 
 # Quick config updates
 alias hosts="subl /etc/hosts"

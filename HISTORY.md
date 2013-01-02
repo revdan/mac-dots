@@ -1,5 +1,14 @@
 History
 ===
+0.3.9
+---
+alias to navigate to ST2 User directory
+
+0.3.8
+---
+added additional git log format
+updated zyxel alias
+
 0.3.7
 ---
 fixed commented-out commands, DOH!
