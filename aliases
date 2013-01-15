@@ -50,6 +50,9 @@ alias stable_branch="git co stable"
 alias gx="gitx"
 alias rebase_master="git pull --rebase origin master"
 alias rebase_stable="git pull --rebase origin stable"
+alias stash_diff="for stash in $(git stash list | awk '{print $1}' | sed -e 's/://'); do
+  (echo $stash && git stash show -p $stash);
+	done"
 
 # rails
 alias b="bundle"
@@ -68,3 +71,6 @@ alias rst='touch tmp/restart.txt'
 
 # RubyMine
 alias remote-debug="rdebug-ide --port 1234 -- \$1"
+
+# Vim
+alias v="mvim -v"

@@ -45,3 +45,4 @@ esac
 
 # Temporary utility function
 unset _source_if_exists ;
+PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
